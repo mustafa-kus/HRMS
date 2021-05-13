@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name="JobAplications")
+@Table(name="jobaplications")
 @NoArgsConstructor
 @AllArgsConstructor
 public class JobAplication {

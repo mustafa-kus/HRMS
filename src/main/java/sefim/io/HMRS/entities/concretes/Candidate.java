@@ -11,8 +11,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
-@Table(name="Candidates")
+
+@Table(name="candidates")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Candidate extends User {

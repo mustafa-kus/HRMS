@@ -11,8 +11,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
-@Table(name="Employers")
+
+@Table(name="employers")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Employer extends User
