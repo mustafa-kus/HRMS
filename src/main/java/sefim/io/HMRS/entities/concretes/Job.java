@@ -8,26 +8,29 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 @Data
 @Entity
 @Table(name="jobs")
 @NoArgsConstructor
 @AllArgsConstructor
+ 
 public class Job {
 	@Id
     @GeneratedValue
     @Column(name="id")
-	private int id;
+	private @NonNull int id;
 	@Column(name="SectorId")
-	private int SectorId;
+	private @NonNull int SectorId;
 	@Column(name="CampanyId")
-	private int CampanyId;
+	private @NonNull int CampanyId;
 	@Column(name="PositionId")
-	private short PositionId;
+	private @NonNull short PositionId;
 	@Column(name="Requirements")
-	private String Requirements;
+	private @NonNull String Requirements;
 	@Column(name="Need")
-	private short Need;
+	private @NonNull short Need;
 }

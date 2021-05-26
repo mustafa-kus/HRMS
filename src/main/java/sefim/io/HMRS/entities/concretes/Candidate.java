@@ -11,7 +11,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-
 @Table(name="candidates")
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,4 +29,6 @@ public class Candidate extends User {
 	private short rate;
 	@Column(name="VerificationCode")
 	private String verificationCode;
+	@Column(name="YearOfBird")
+	private int YearOfBird;
 }
